@@ -11,9 +11,7 @@
 <script>
 import axios from 'axios';
 import { MUSIC_URL } from '../globals';
-console.log(MUSIC_URL);
 const API_KEY = process.env.VUE_APP_MUSIC_API_KEY;
-console.log(API_KEY);
 // import MusicCard from '../components/MusicCard.vue';
 // import MusicView from '../components/MusicView.vue';
 
@@ -30,7 +28,6 @@ export default {
 
 	mounted: function () {
 		this.getChartList();
-		console.log('working');
 	},
 
 	methods: {
@@ -39,7 +36,6 @@ export default {
 				`${MUSIC_URL}2.0/?method=user.getweeklychartlist&user=rj&api_key${API_KEY}&format=json`
 			);
 			this.chartList = response.data;
-			console.log(response);
 		},
 		async getTrackChart() {
 			const result = await axios.get(
