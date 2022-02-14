@@ -1,0 +1,1 @@
+export const MUSIC_URL = 'https://ws.audioscrobbler.com/'
