@@ -3,8 +3,8 @@
 		<div id="nav">
 			<router-link to="/sign-up"> Sign Up </router-link>
 			<router-link to="/log-in"> Log In </router-link>
-			<router-link to="/music"> Music </router-link>
-			<!-- <router-link to="/playlists"> Playlists </router-link> -->
+			<router-link to="/music"> </router-link>
+			<router-link to="/playlists"> </router-link>
 		</div>
 		<router-view />
 	</div>
@@ -45,9 +45,7 @@ export default {
 #nav {
 	color: #15e3ac;
 
-	/* display: inline; */
 	font-family: 'Luckiest Guy', cursive;
-	/* position: relative; */
 	margin-top: 10px auto;
 	text-align: left;
 	min-height: 10vh;
