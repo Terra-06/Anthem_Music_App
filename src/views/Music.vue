@@ -37,6 +37,7 @@
 			</section>
 		</div>
 	</div>
+	<a class="logout" v-on:click="logout" href="#"> Logout </a>
 </template>
 
 <script>
@@ -72,6 +73,10 @@ export default {
 		handleChange(event) {
 			this.searchQuery = event.target.value;
 			this.searched = true;
+		},
+		logout() {
+			localStorage.clear();
+			this.$router.push('/log-in');
 		},
 	},
 };
@@ -215,5 +220,9 @@ button {
 }
 .space {
 	justify-content: space-between;
+}
+
+.logout {
+	font-size: 30px;
 }
 </style>
