@@ -26,7 +26,6 @@
 				>
 			</section>
 		</div>
-		<!-- @selectMusic="selectMusic" -->
 
 		<div class="genres" v-if="!searched">
 			<h2>Playlists</h2>
