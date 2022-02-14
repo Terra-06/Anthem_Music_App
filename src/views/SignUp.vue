@@ -69,6 +69,7 @@ export default {
 				.post('/api/v1/users/', formData)
 				.then((response) => {
 					this.$router.push('/log-in');
+					return response;
 				})
 				.catch((error) => {
 					return error;
@@ -77,9 +78,3 @@ export default {
 	},
 };
 </script>
-
-<style>
-.sign-up {
-	color: #7dd526;
-}
-</style>

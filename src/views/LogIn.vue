@@ -60,9 +60,3 @@ export default {
 	},
 };
 </script>
-
-<style>
-.log-in {
-	color: #7dd526;
-}
-</style>
