@@ -1,1 +1,1 @@
-export const MUSIC_URL = 'http://ws.audioscrobbler.com/'
+export const MUSIC_URL = 'https://ws.audioscrobbler.com/'
