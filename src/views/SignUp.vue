@@ -69,10 +69,9 @@ export default {
 				.post('/api/v1/users/', formData)
 				.then((response) => {
 					this.$router.push('/log-in');
-					console.log(response);
 				})
 				.catch((error) => {
-					console.log(error);
+					return error;
 				});
 		},
 	},
