@@ -31,11 +31,11 @@
 		<div class="genres" v-if="!searched">
 			<h2>Playlists</h2>
 			<section class="container-grid">
-				<MusicGenre
+				<!-- <MusicGenre
 					:genre="genre"
 					:key="genre.name"
 					v-for="genre in genres"
-				/>
+				/> -->
 			</section>
 		</div>
 	</div>
