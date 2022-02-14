@@ -5,7 +5,6 @@
 		</div>
 
 		<div class="search">
-			<!-- Search Form Goes Here -->
 			<form @submit.prevent="getSearchMusic">
 				<input
 					type="text"
