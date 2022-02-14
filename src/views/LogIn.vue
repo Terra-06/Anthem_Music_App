@@ -38,13 +38,10 @@ export default {
 				username: this.username,
 				password: this.password,
 			};
-			console.log(formData);
 
 			axios
 				.post('/api/v1/token/login/', formData)
 				.then((response) => {
-					console.log(response);
-
 					const token = response.data.auth_token;
 
 					this.$store.commit('setToken', token);
@@ -57,7 +54,7 @@ export default {
 					this.$router.push('/music');
 				})
 				.catch((error) => {
-					console.log(error);
+					return error;
 				});
 		},
 	},
