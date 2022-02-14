@@ -4,7 +4,7 @@
 			<router-link to="/sign-up"> Sign Up </router-link>
 			<router-link to="/log-in"> Log In </router-link>
 			<router-link to="/music"> </router-link>
-			<router-link to="/playlists"> </router-link>
+			<!-- <router-link to="/playlists"> </router-link> -->
 		</div>
 		<router-view />
 	</div>
@@ -15,6 +15,7 @@ import axios from 'axios';
 
 export default {
 	name: 'App',
+
 	beforeCreate() {
 		this.$store.commit('initializeStore');
 
