@@ -1,7 +1,3 @@
-////
-/2.0/?method=user.getweeklychartlist&user=rj&api_key=YOUR_API_KEY&format=json
-////2.0/?method=user.getweeklytrackchart&user=rj&api_key=YOUR_API_KEY&format=json
-
 <template>
 	<div class="playlists">
 		<h1>Playlists</h1>
@@ -12,13 +8,11 @@
 import axios from 'axios';
 import { MUSIC_URL } from '../globals';
 const API_KEY = process.env.VUE_APP_MUSIC_API_KEY;
-// import MusicCard from '../components/MusicCard.vue';
 // import MusicView from '../components/MusicView.vue';
 
 export default {
 	name: 'Playlist',
 	components: {
-		// MusicCard,
 		// MusicView,
 	},
 	data: () => ({
